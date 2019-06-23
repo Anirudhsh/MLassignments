@@ -13,5 +13,8 @@ for i in words:
         wordcnt[i]=1
     else:
         wordcnt[i]+=1
-wordcnt = sorted(wordcnt.items(), key=lambda x: x[1])
-print(wordcnt)
+wosorted = sorted(wordcnt.items(), key =lambda x:(x[1], x[0]),reverse=True)
+#print(wosorted)
+# 0 not taken as it is ''
+top20words = wosorted[1:21]
+print(top20words)
