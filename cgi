@@ -3,7 +3,7 @@
 import cgi
 import cgitb # to show Common error in web browser cgiTraceBack
 
-from googlesearch import search
+import googlesearch
 
 cgitb.enable()
 
